@@ -1,0 +1,24 @@
+#nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+/*
+.recommend{
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://vevano.com/cdn/shop/articles/banner-gourmet-kitchen-design_377542e3-094e-4f41-98b8-65aab2166d31.jpg?v=1657031087");
+}*/
+
+.footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    height: 200px;
+    position: fixed;
+}
