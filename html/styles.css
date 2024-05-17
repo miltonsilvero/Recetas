@@ -30,8 +30,8 @@
 }
 
 .card {
-    margin: 3px; /* Espacio entre los elementos */
-    width: 20%; /* Limitar el ancho máximo de los elementos */
+    margin: 3px;
+    width: 20%;
     max-width: calc(25% - 15px);
     overflow: hidden;
 
@@ -56,3 +56,136 @@ footer{
     color:rgb(41, 41, 41);
 }
 
+
+.image-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-title {
+    font-size: 3rem;
+}
+.custom-description {
+    font-size: 1.5rem;
+}
+
+
+
+
+.cards{
+    display: flex;
+    padding: 1rem;
+}
+
+.card{
+    margin: 0.5rem;
+}
+
+.card-body{
+    background-color: saddlebrown;
+    color: white;
+}
+
+
+
+.call-to-generator {
+    background-color: #dd8623;
+    width: 100%;
+}
+
+.call-to-generator .content {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna para la imagen y el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.call-to-generator img {
+    max-width: 50%;
+    height: auto;
+}
+
+.custom-title2{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.call-to-generator .text-container {
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(69, 146, 38);
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+}
+
+/* Breakpoints */
+
+/* PC (Escritorio) */
+@media (min-width: 992px) {
+    .custom-title {
+        font-size: 2.5rem;
+    }
+    .custom-description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .custom-title {
+        font-size: 2rem;
+    }
+    .custom-description {
+        font-size: 1rem;
+    }
+}
+
+/* Celular */
+@media (max-width: 767px) {
+    .custom-title {
+        font-size: 1.5rem;
+    }
+    .custom-description {
+        font-size: 0.9rem;
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .nav-item {
+        margin: 0 auto;
+    }
+
+    .image-container img {
+        height: auto;
+    }
+}
